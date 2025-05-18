@@ -9,6 +9,9 @@
 body {
     /* Add a background color or image */
     background-color: var(--bg-color);
+    background-image: url(img/end.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     /* see bottom of file for color variables */
 
 
@@ -184,8 +187,8 @@ a:visited {
 
 :root {
     /* Light Mode */
-    --bg-color: #097019;
-    --text-color: #231942;
+    --bg-color: #edf5ef;
+    --text-color: #05030a;
 
 
     /* Dark Mode */
