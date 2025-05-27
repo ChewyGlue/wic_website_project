@@ -6,6 +6,7 @@
 ***/
 
 
+
 body {
     /* Add a background color or image */
     background-color: var(--bg-color);
@@ -18,12 +19,13 @@ body {
     /* Customize the default size, color, and font for text*/
     font-size: 16px;
     color: var(--text-color);
-    font-family: Tahoma, sans-serif;
+    font-family: Arial, sans-serif;
     /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
 
 
     /* Put space around the edges of the webpage */
     margin: 50px;
+    padding-top: 60px;
 }
 
 
@@ -35,7 +37,7 @@ body {
 
 
 h1 {
-    color: darkturquoise;
+    color: rgb(0, 0, 0);
     size: 3in;
     text-align: center;
     font-size: larger
@@ -61,7 +63,7 @@ h4 {
 
 
 p {
-    color: darkgreen;
+    color: rgb(0, 0, 0);
     size: 1in;
     text-align: center;
 
@@ -74,24 +76,29 @@ a * {}
 
 button {
     /* Example Style, replace with your own! */
-    background-color: green;
+    background-color: #54D6AC;
     /* button color */
-    color: white;
+    color: rgb(0, 0, 0);
     /* text color */
+    font-size: 24px;
+    font-weight: lighter;
     border: none;
     /* hides the default border */
     padding: 5px 12px;
     /* space between button's text and edge */
-    border-radius: 5px;
+
     /* curved edges instead of square */
     cursor: pointer;
     /* makes the cursor change when over button */
+    border: 2px solid #132B24;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 button:hover {
     /* Make the button look different when the user hovers over it */
-    background-color: yellow;
+    background-color: #35856E;
+    color: rgb(0, 0, 0)
 }
 
 
@@ -100,11 +107,31 @@ button:hover {
   - Add style rules for your website's header section
 ***/
 
-
 .header {
+
     /* Example A: This styles elements with class="header" */
 
 }
+
+/* Header using Flexbox */
+.header-container {
+    display: flex;
+    /* Enable flexbox layout */
+    flex-direction: column;
+    /* Align items in a row */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    gap: 20px;
+    /* Space between elements */
+    margin-top: 20px;
+    /* Top margin */
+    text-align: center;
+}
+
+
+
 
 
 /*** footer ***
@@ -123,24 +150,37 @@ button:hover {
   Purpose:
   - Add style rules for your website's navbar
 ***/
-
-
-.navbar ul {
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #35856E;
     z-index: 1000;
-    /* Ensures the navbar is on top of other elements */
 }
 
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 
 .navbar ul li {
-    float: left;
     margin: 10px;
 }
 
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+}
 
-.navbar ul li a {}
-
-
-.navbar ul li a:hover {}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -159,20 +199,21 @@ button:hover {
 ***/
 
 a:hover {
-    color: rgb(45, 22, 188);
-    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    font-family:
+
 }
 
 a:active {
-    color: red;
+    color: rgb(0, 0, 0);
 }
 
 a:link {
-    color: darkgoldenrod;
+    color: rgb(0, 0, 0);
 }
 
 a:visited {
-    color: rgb(52, 141, 237);
+    color: rgb(0, 0, 0);
 }
 
 /*** Dark Mode [PLACEHOLDER] ***/
@@ -208,3 +249,99 @@ a:visited {
     --error-color: #f8bbd0;
     --error-color-border: #e63946;
 }
+
+.gameplay-container {
+    display: flex;
+    flex-direction: column;
+    /* or row, whichever layout you want */
+    gap: 15px;
+    /* space between items */
+    padding: 10px;
+    /* some padding if you want */
+    /* add any other styles */
+    align-items: center;
+}
+
+.signup-section {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.schedule {
+    display: flex;
+    /* makes children flex items */
+    gap: 20px;
+    /* space between event chunks */
+    justify-content: center;
+    /* center chunks horizontally */
+    flex-wrap: wrap;
+    /* wrap if screen is too narrow */
+}
+
+.rules {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event {
+    display: flex;
+    /* make event content flex */
+    flex-direction: column;
+    /* stack image, h3, and p vertically */
+    align-items: center;
+    /* center them horizontally */
+    max-width: 300px;
+    /* optional - keep chunks a good size */
+    padding: 10px;
+    border: 2px solid #000000;
+    /* optional - border to see chunks */
+    background-color: #35856E;
+    /* optional - rounded corners */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.header-item:nth-child(1) {
+    background-color: lightblue;
+}
+
+.header-item:nth-child(2) {
+    background-color: lightgreen;
+}
+
+.header-item:nth-child(3) {
+    background-color: lightyellow;
+}
+
+.header-item:nth-child(4) {
+    background-color: lightcoral;
+} */
+
+
+* Default dark mode style */ .dark-mode {}
+
+
+/* Example: Different dark mode style for h1 */
+.dark-mode body {
+    background-color: black;
+    color: white;
+}
+
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+    .dark-mode h1 {
+        color: pink;
+    }
+
+
+    /* Add style to button */
+    #theme-button {}

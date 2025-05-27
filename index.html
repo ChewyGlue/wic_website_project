@@ -9,7 +9,7 @@
         - Link to the CSS file (used to style the webpage)
         -->
     <link rel="stylesheet" href="styles.css">
-    <title>A 24-hour minecraft competition</title>
+    <title>A 24-hour mining marathon</title>
     <link rel="icon" href="img/diamond.png">
     <style>
         /* Style rules go here. */
@@ -22,9 +22,23 @@
 <body>
 
     <!-- navbar [PLACEHOLDER] -->
+    <!-- navbar
+Purpose:
+- Navigation bar that allows users to jump to different sections of the webpage
+- Also holds buttons for user settings (dark mode, reduce motion)
+-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about-topic">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><button id="theme-button">Toggle Theme</button></li>
+        </ul>
+    </nav>
+    <!-- other content 
 
 
-    <!-- headings
+      <headings 
 
 
         Purpose:
@@ -33,13 +47,17 @@
         -->
     <!-- This is a comment  -->
 
-    <h1> <img
-            src="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW9uZCBEYXNo/minecraft-ten.png?r=fs&h=130&w=2000&fg=030303&bg=FFFFFF&tb=1&s=65"
-            alt="Minecraft fonts"></a> </h1>
-    <img src="img/heartbar.png">
-    <h2>a 24-hour minecraft challenge</h2>
-    <button type="button">Sign-up</button>
-    <button type="button">Details</button>
+    <header class="header-container">
+        <h1 class="header-item"> <img
+                src="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW9uZCBEYXNo/minecraft-ten.png?r=fs&h=130&w=2000&fg=030303&bg=FFFFFF&tb=1&s=65"
+                alt="Minecraft fonts"></a> </h1>
+        <h2 class="header-item"></h2>
+        <div class="signup-section header-item">
+            <button type="button">Sign Up</button>
+            <button type="button">details</button>
+        </div>
+    </header>
+
 
 
     <!-- about
@@ -49,23 +67,30 @@
         - Section for general info about the event
         - Contains a video, description, and key points about the event
         -->
-    <h2>gameplay</h2>
-    <p>Diamond Dash is a 24-hour Minecraft event where players race to collect as many diamonds as possible before the
-        server closes. Kill your competitors along the way to win bonus rewards like DoorDash gift cards. At the
-        end of the event, the top three players will earn $3 for every diamond in their inventory, so every block
-        counts! </p>
+    <section class="gameplay-container" id="about-topic">
+
+        <h2></h2>
+        <p>Diamond Dash is a 24-hour Minecraft event where players race to collect as many diamonds as possible before
+            the
+            server closes. Kill your competitors along the way to win bonus rewards like DoorDash gift cards. At the
+            end of the event, the top three players will earn $3 for every diamond in their inventory, so every block
+            counts! </p>
+    </section>
 
 
-    <h3>A mining marathon</h3>
-    <h4>GameRules</h4>
-    <ul>
-        <li> <b>1:</b> <i>once you die - you don't respawn</i></li>
-        <li> <b>2:</b> <i>each player is equipped with a built in compass directing them to the nearest player</i></li>
-        <li> <b>3:</b> <i>difficulty settings on hard - watch out for those cave mobs!</i></li>
-        <li> <b>4:</b> <i>players using hacks like X-ray cheats will be automatically banned upon joining the server</i>
-        </li>
-    </ul>
-
+    <section class="rules">
+        <h3>A mining marathon</h3>
+        <h4>GameRules</h4>
+        <ul>
+            <li> <b>1:</b> <i>once you die - you don't respawn</i></li>
+            <li> <b>2:</b> <i>each player is equipped with a built in compass directing them to the nearest player</i>
+            </li>
+            <li> <b>3:</b> <i>difficulty settings on hard - watch out for those cave mobs!</i></li>
+            <li> <b>4:</b> <i>players using hacks like X-ray cheats will be automatically banned upon joining the
+                    server</i>
+            </li>
+        </ul>
+    </section>
 
     <!-- schedule
 
@@ -74,23 +99,29 @@
         - Section for specific info about the event's schedule
         - Contains images and descriptions of each activity
         -->
-    <h2>Game Schedule</h2>
+    <section class="schedule" id="schedule">
 
 
-    <img alt="" src="./img/art.png" width="350" height="200" />
-    <h3>Friday 12pm</h3>
-    <p>kick off! our server opens to all registrants</p>
+        <div class="event">
+            <img alt="" src="./img/portal.png" width="300" height="350" />
+            <h3>Friday 12pm</h3>
+            <p>kick off! our server opens to all registrants</p>
+        </div>
 
-    <img alt="Image description" src="./img/enderman.png" width="300" height="300" />
-    <h3>Friday 3pm</h3>
-    <p>Let the slaughtering commence! Too busy mining but hungry for some chum? Each player you kill earns you a 25
-        dollar doordash giftcard.</p>
+        <div class="event">
+            <img alt="Image description" src="./img/hampter.png" width="300" height="300" />
+            <h3>Friday 3pm</h3>
+            <p>Let the slaughtering commence! Too busy mining but hungry for some chum? Each player you kill earns you a
+                25
+                dollar doordash giftcard.</p>
+        </div>
 
-
-    <img alt="Image description" src="./img/coquette.png" width="300" height="300" />
-    <h3>Saturday 12pm</h3>
-    <p>time's up! the server freezes, view your scoreboard position in the minecraft chat</p>
-
+        <div class="event">
+            <img alt="Image description" src="./img/enderman.png" width="300" height="300" />
+            <h3>Saturday 12pm</h3>
+            <p>time's up! the server freezes, view your scoreboard position in the minecraft chat</p>
+        </div>
+    </section>
 
     <!-- rsvp [PLACEHOLDER] -->
     <!-- success modal [PLACEHOLDER] -->
@@ -102,35 +133,37 @@
         Purpose:
         - Links to other resources related to the event
         -->
-    <h2>Links</h2>
+    <section class="links" id="links">
+        <h2>Links</h2>
 
 
-    <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
-    <iframe width="450" height="250" src="https://www.youtube.com/embed/atgjKEgSqSU?si=f0IXYEfFDScEAcvz"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/atgjKEgSqSU?si=f0IXYEfFDScEAcvz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <a class="block" href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners">
-        <article>
-            <h3>minecraft basics</h3>
-            <p></p>
-        </article>
-    </a>
+        <a class="block" href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners">
+            <article>
+                <h3>minecraft basics</h3>
+                <p></p>
+            </article>
+        </a>
 
-    <a class="block" href="https://www.minecraft.net/en-us/article/how-play-minecraft-server">
-        <article>
-            <h3>how to join a minecraft server</h3>
-            <p></p>
-        </article>
-    </a>
+        <a class="block" href="https://www.minecraft.net/en-us/article/how-play-minecraft-server">
+            <article>
+                <h3>how to join a minecraft server</h3>
+                <p></p>
+            </article>
+        </a>
+    </section>
 
 
 
     <!-- footer [PLACEHOLDER] -->
     <!-- script [PLACEHOLDER]-->
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
