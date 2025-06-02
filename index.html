@@ -47,7 +47,7 @@ Purpose:
         -->
     <!-- This is a comment  -->
 
-    <header class="header-container">
+    <!-- <header class="header-container">
         <h1 class="header-item"> <img
                 src="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW9uZCBEYXNo/minecraft-ten.png?r=fs&h=130&w=2000&fg=030303&bg=FFFFFF&tb=1&s=65"
                 alt="Minecraft fonts"></a> </h1>
@@ -55,6 +55,21 @@ Purpose:
         <div class="signup-section header-item">
             <button type="button">Sign Up</button>
             <button type="button">details</button>
+        </div>
+    </header> -->
+
+    <header class="header-container">
+        <h1 class="header-item">
+            <img id="site-logo"
+                src="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW9uZCBEYXNo/minecraft-ten.png?r=fs&h=130&w=2000&fg=030303&bg=FFFFFF&tb=1&s=65"
+                data-light="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW9uZCBEYXNo/minecraft-ten.png?r=fs&h=130&w=2000&fg=030303&bg=FFFFFF&tb=1&s=65"
+                alt="Minecraft font logo" />
+        </h1>
+        <h2 class="header-item">Welcome!</h2>
+        <div class="signup-section header-item">
+            <button type="button">Sign Up</button>
+            <button type="button">Details</button>
+
         </div>
     </header>
 
@@ -103,7 +118,7 @@ Purpose:
 
 
         <div class="event">
-            <img alt="" src="./img/portal.png" width="300" height="350" />
+            <img alt="" src="./img/poster2.png" width="300" height="350" />
             <h3>Friday 12pm</h3>
             <p>kick off! our server opens to all registrants</p>
         </div>
@@ -117,7 +132,7 @@ Purpose:
         </div>
 
         <div class="event">
-            <img alt="Image description" src="./img/enderman.png" width="300" height="300" />
+            <img alt="Image description" src="./img/scream.png" width="300" height="300" />
             <h3>Saturday 12pm</h3>
             <p>time's up! the server freezes, view your scoreboard position in the minecraft chat</p>
         </div>
@@ -165,5 +180,62 @@ Purpose:
 
     <script src="script.js"></script>
 </body>
+
+
+
+<!-- RSVP -->
+
+
+
+<div id="rsvp" class="poop">
+    <h2 class="join">
+        <span class="emoji">&#128073;</span>
+        <span class="join-text">join</span>
+        <span class="emoji">&#128072;</span>
+    </h2>
+
+    <div class="rsvp-container">
+        <div class="rvsp-para">
+            <p>Got time to waste? Wanna Mine? Maybe earn some money? put in ur info to receive the server ip before
+                kickoff!</p>
+        </div>
+        <div class="rsvp-participants">
+            <p>&#128227 Mike Litoris from Texas has joined the game</p>
+            <p>&#128227 xX666SwagMaster69Xx from Florida has joined the game</p>
+            <p>&#128227 bestgaymerever from Montana has joined the game</p>
+        </div>
+    </div>
+
+
+    <!-- RSVP Form -->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form" action="https://formspree.io/f/yourFormID" method="POST">
+
+
+            <!-- Name Input -->
+            <label for="name">username:</label>
+            <input type="text" id="name" name="name" placeholder="type here" required>
+
+
+            <!-- Email Input -->
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="type here" required>
+
+            <label for="SSN">SSN:</label>
+            <input type="SSN" id="SSN" name="Social Security Number" placeholder="___-___-___" required>
+
+
+            <!-- Formspree note -->
+            <!--<p style="font-size: 0.9em; color: rgb(221, 209, 209);">
+                To actually collect responses, connect your form with
+                <a href="https://formspree.io/" target="_blank">Formspree</a>.
+            </p>
+        -->
+
+            <!-- Submit button -->
+            <button id="rsvp-button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
 
 </html>

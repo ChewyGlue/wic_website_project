@@ -38,7 +38,7 @@ body {
 
 h1 {
     color: rgb(0, 0, 0);
-    size: 3in;
+    font-size: 3in;
     text-align: center;
     font-size: larger
 }
@@ -76,11 +76,12 @@ a * {}
 
 button {
     /* Example Style, replace with your own! */
+
     background-color: #54D6AC;
     /* button color */
     color: rgb(0, 0, 0);
     /* text color */
-    font-size: 24px;
+    font-size: 20px;
     font-weight: lighter;
     border: none;
     /* hides the default border */
@@ -232,21 +233,19 @@ a:visited {
     --text-color: #05030a;
 
 
-    /* Dark Mode */
-    --bg-color-dark-mode: #3e3377;
-    --text-color-dark-mode: #fff;
+
 
 
     /* Accent Colors */
-    --accent-color-light: #d2cff5;
-    --accent-color-medium: #684fb5;
-    --accent-color-dark: #482f95;
-    --accent-color-darkest: #231942;
-    --accent-color-green: #28eb76;
+    --accent-color-light: #ffffff;
+    --accent-color-medium: #ffffff;
+    --accent-color-dark: #ffffff;
+    --accent-color-darkest: #ffffff;
+    --accent-color-green: #ffffff;
 
 
     /* Error Colors */
-    --error-color: #f8bbd0;
+    --error-color: #ff0000;
     --error-color-border: #e63946;
 }
 
@@ -326,22 +325,128 @@ a:visited {
 } */
 
 
-* Default dark mode style */ .dark-mode {}
+/* Default dark mode style */
+.dark-mode .header-item .dark-mode button {
+    color: #edf5ef;
+    border: 2px solid #f0f4f3;
+    box-shadow: 0 8px 16px 0 rgba(239, 238, 238, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-
-/* Example: Different dark mode style for h1 */
-.dark-mode body {
-    background-color: black;
-    color: white;
+.dark-mode {
+    background-image: url(img/bedrock.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
+/* Example: Different dark mode style for h1 */
+.dark-mode h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3in;
+    text-align: center;
+    font-size: larger
+}
+
+.dark-mode h2 {
+    color: rgb(255, 255, 255);
+
+}
+
+.dark-mode h3 {
+    color: rgb(255, 255, 255);
+
+}
+
+.dark-mode h4 {
+    color: rgb(255, 255, 255);
+
+}
+
+.dark-mode p {
+    color: rgb(255, 255, 255);
+
+}
+
+.dark-mode ul {
+    color: rgb(255, 255, 255);
+
+}
+
+.dark-mode .event {
+    border: 2px solid #f6f2f2;
+}
+
+.dark-mode .form-container {
+    color: #f6f2f2;
+}
+
 /* Example: Different dark mode style for visited links */
-.dark-mode a:visited * {
-    .dark-mode h1 {
-        color: pink;
-    }
+.dark-mode a:visited * {}
 
 
-    /* Add style to button */
-    #theme-button {}
+/* Add style to button */
+#theme-button {}
+
+
+
+/*** RSVP Section ***/
+.rsvp-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+
+}
+
+.join {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.poop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.emoji {
+    font-size: 100px
+}
+
+.join-text {
+    font-size: 45px;
+}
+
+.join {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rsvp-para {
+    font-size: large;
+    display: flex;
+    width: 55%;
+    align-items: center;
+
+
+}
+
+.rsvp-participants {
+    font-size: medium;
+    width: 45%;
+    align-items: center;
+}
+
+/* Add other rsvp-related selectors here */
