@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add new participant to participants div
     const newParticipant = document.createElement("p");
-    newParticipant.textContent = `📣 ${username} in ${college} has joined the game`;
+    newParticipant.textContent = `📣 ${username} from ${college} has joined the game`;
     rsvpParticipants.appendChild(newParticipant);
 
     // Remove old count
