@@ -45,19 +45,19 @@ h1 {
 
 
 h2 {
-    size: 1.5in;
+    font-size: 15px;
 
 }
 
 
 h3 {
-    size: 2.5in;
+    font-size: 20px;
 
 }
 
 
 h4 {
-    size: 1.5in;
+    font-size: 30px;
 
 }
 
@@ -403,7 +403,7 @@ a:visited {
     font-size: larger;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 
 
 }
@@ -412,20 +412,24 @@ a:visited {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-shadow: 0 0 10px #4EC7A0, 0 0 20px #4EC7A0, 0 0 30px #4EC7A0;
+
+
+
 }
 
 .emoji {
-    font-size: 100px
+    font-size: 50px;
+    text-shadow: 0 0 10px #4EC7A0, 0 0 20px #4EC7A0, 0 0 30px #4EC7A0;
+
+
 }
 
 .join-text {
     font-size: 45px;
 }
 
-.join {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .form-container {
     display: flex;
@@ -450,3 +454,61 @@ a:visited {
 }
 
 /* Add other rsvp-related selectors here */
+
+
+/*** Animations  ***
+  Purpose:
+  - Add style rules to enable scroll animations for your website
+***/
+
+/*** Animations ***/
+
+.revealable {
+    --reveal-distance: 150px;
+    /* Distance before revealing */
+
+    scroll-margin-top: var(--reveal-distance);
+    opacity: 0;
+    transition: all 2s ease;
+    position: relative;
+    transform: translateY(var(--reveal-distance));
+}
+
+.active {
+    scroll-margin-top: 0;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.prizes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.prizes {
+    display: flex;
+    /* makes children flex items */
+    gap: 20px;
+    /* space between event chunks */
+    justify-content: center;
+    /* center chunks horizontally */
+    flex-wrap: wrap;
+    /* wrap if screen is too narrow */
+}
+
+
+.prize {
+    display: flex;
+    /* make event content flex */
+    flex-direction: column;
+    /* stack image, h3, and p vertically */
+    align-items: center;
+    /* center them horizontally */
+    max-width: 300px;
+    /* optional - keep chunks a good size */
+    padding: 10px;
+
+    background-color: #4EC7A0;
+
+}

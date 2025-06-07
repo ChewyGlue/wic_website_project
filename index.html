@@ -29,46 +29,29 @@ Purpose:
 -->
     <nav class="navbar">
         <ul>
-            <li><a href="#about-topic">About</a></li>
+
             <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#links">Links</a></li>
+            <li><a href="#rsvp">Sign Up</a></li>
             <li><button id="theme-button">Toggle Theme</button></li>
         </ul>
     </nav>
-    <!-- other content 
 
 
-      <headings 
-
-
-        Purpose:
-        - Main header section of the webpage
-        - Contains the title, subtitle, image, and key buttons for the webpage
-        -->
-    <!-- This is a comment  -->
-
-    <!-- <header class="header-container">
-        <h1 class="header-item"> <img
-                src="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW9uZCBEYXNo/minecraft-ten.png?r=fs&h=130&w=2000&fg=030303&bg=FFFFFF&tb=1&s=65"
-                alt="Minecraft fonts"></a> </h1>
-        <h2 class="header-item"></h2>
-        <div class="signup-section header-item">
-            <button type="button">Sign Up</button>
-            <button type="button">details</button>
-        </div>
-    </header> -->
 
     <header class="header-container">
         <h1 class="header-item">
             <img id="site-logo"
                 src="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW9uZCBEYXNo/minecraft-ten.png?r=fs&h=130&w=2000&fg=030303&bg=FFFFFF&tb=1&s=65"
                 data-light="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW9uZCBEYXNo/minecraft-ten.png?r=fs&h=130&w=2000&fg=030303&bg=FFFFFF&tb=1&s=65"
+                data-dark="https://see.fontimg.com/api/rf5/VGORe/YTQ1NWU1ODA5Y2NmNDgyODkxZjg5MjdiZWQ2ZmFlMjQub3Rm/RGlhbW5kIERhc2g=/minecraft-ten.png?r=fs&h=130&w=2000&fg=FFFFFF&bg=000000&tb=1&s=65"
                 alt="Minecraft font logo" />
         </h1>
-        <h2 class="header-item">Welcome!</h2>
+        <h2 class="header-item">hey there! keep scrolling</h2>
         <div class="signup-section header-item">
-            <button type="button">Sign Up</button>
-            <button type="button">Details</button>
+            <iframe width="450" height="250" src="https://www.youtube.com/embed/atgjKEgSqSU?si=f0IXYEfFDScEAcvz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
     </header>
@@ -84,25 +67,38 @@ Purpose:
         -->
     <section class="gameplay-container" id="about-topic">
 
-        <h2></h2>
-        <p>Diamond Dash is a 24-hour Minecraft event where players race to collect as many diamonds as possible before
-            the
-            server closes. Kill your competitors along the way to win bonus rewards like DoorDash gift cards. At the
-            end of the event, the top three players will earn $3 for every diamond in their inventory, so every block
-            counts! </p>
+        <h2>
+            <p>
+                💎 Diamond Dash is a 24-hour Minecraft mining challenge for UCSD gamers. Compete to mine the most
+                diamonds before the server shuts down!<br><br>
+
+
+                💥 Need some gaming fuel? Every player you eliminate earns you $15 in Dining Dollars<br><br>
+
+
+                🏆 The top 3 diamond hoarders will score some cool prizes<br><br>
+
+
+
+            </p>
+        </h2>
     </section>
 
 
-    <section class="rules">
-        <h3>A mining marathon</h3>
-        <h4>GameRules</h4>
+    <section class="rules revealable">
+
+        <h4>game rulez</h4>
         <ul>
-            <li> <b>1:</b> <i>once you die - you don't respawn</i></li>
-            <li> <b>2:</b> <i>each player is equipped with a built in compass directing them to the nearest player</i>
+            <li> <b>1:</b> <i> built-in inventory compass that points to the nearest player. Hunt
+                    or hide.</i></li>
+            <li> <b>2:</b> <i>No Cheats – Anyone caught using hacks (X-ray, fly, etc.) gets insta-banned. We’ve got eyes
+                    on you.</i>
             </li>
-            <li> <b>3:</b> <i>difficulty settings on hard - watch out for those cave mobs!</i></li>
-            <li> <b>4:</b> <i>players using hacks like X-ray cheats will be automatically banned upon joining the
-                    server</i>
+            <li> <b>3:</b> <i>Every player starts with 3 lives. Run out, and you’re out of the competition (but you can
+                    still spectate!)</i></li>
+            <li> <b>4:</b> <i>Feel free to log off and rejoin, just know the game keeps going while you’re gone.
+
+                </i>
             </li>
         </ul>
     </section>
@@ -114,27 +110,27 @@ Purpose:
         - Section for specific info about the event's schedule
         - Contains images and descriptions of each activity
         -->
-    <section class="schedule" id="schedule">
+    <section class="schedule revealable" id="schedule">
 
 
         <div class="event">
-            <img alt="" src="./img/poster2.png" width="300" height="350" />
-            <h3>Friday 12pm</h3>
-            <p>kick off! our server opens to all registrants</p>
+            <img alt="" src="./img/portal.png" width="300" height="300" />
+            <h3>Friday @ 12pm</h3>
+            <p>The server opens and the game begins. Log on, gear up, and get mining!
+
+            </p>
         </div>
 
         <div class="event">
             <img alt="Image description" src="./img/hampter.png" width="300" height="300" />
-            <h3>Friday 3pm</h3>
-            <p>Let the slaughtering commence! Too busy mining but hungry for some chum? Each player you kill earns you a
-                25
-                dollar doordash giftcard.</p>
+            <h3>Friday @ 3pm</h3>
+            <p> PvP Unlocked </p>
         </div>
 
         <div class="event">
-            <img alt="Image description" src="./img/scream.png" width="300" height="300" />
-            <h3>Saturday 12pm</h3>
-            <p>time's up! the server freezes, view your scoreboard position in the minecraft chat</p>
+            <img alt="Image description" src="./img/freeze.png" width="300" height="300" />
+            <h3>Saturday @ 12pm</h3>
+            <p> game is over! the server freezes. Check your final diamond count and rankings in the Minecraft chat!</p>
         </div>
     </section>
 
@@ -149,14 +145,11 @@ Purpose:
         - Links to other resources related to the event
         -->
     <section class="links" id="links">
-        <h2>Links</h2>
+        <h2>Helpful Links</h2>
 
 
-        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
-        <iframe width="450" height="250" src="https://www.youtube.com/embed/atgjKEgSqSU?si=f0IXYEfFDScEAcvz"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
         <a class="block" href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners">
             <article>
@@ -173,69 +166,101 @@ Purpose:
         </a>
     </section>
 
+    <div id="rsvp" class="poop">
+        <h2 class="Enter the Mine">
+            <span class="emoji">&#128073;</span>
+            <span class="join-text">join</span>
+            <span class="emoji">&#128072;</span>
+        </h2>
+
+        <div class="rsvp-container">
+            <div class="rvsp-para">
+                <p>Need a break from schoolwork? Submit your info to be emailed the server ip at kickoff!
+                </p>
+            </div>
+
+            <p id="rsvp-count">
+                ⛏️ 3 people dare to dash!</p>
 
 
-    <!-- footer [PLACEHOLDER] -->
-    <!-- script [PLACEHOLDER]-->
 
-    <script src="script.js"></script>
+            <div class="rsvp-participants">
+                <p>&#128227 Bob_Loblaw from Muir joined the game</p>
+                <p>&#128227 xX666SwagMaster69Xx from Seventh has joined the game</p>
+                <p>&#128227 bestgaymerever from Warren has joined the game</p>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- footer [PLACEHOLDER] -->
+        <!-- script [PLACEHOLDER]-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- RSVP -->
+
+
+
+
+        <div class="form-container">
+            <form id="rsvp-form" title="rsvp-form">
+                <label for="name">username:</label>
+                <input type="text" id="name" name="name" placeholder="type here" required>
+
+                <label for="college">college:</label>
+                <input type="text" id="college" name="college" placeholder="type here" required>
+
+                <label for="schoolEmail">schoolEmail:</label>
+                <input type="text" id="schoolEmail" name="schoolEmail" placeholder="type here" required>
+
+                <button id="rsvp-button" type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+
+        <section class="prizes revealable" id="prizes">
+
+
+            <div class="prize">
+                <img alt="Image description" src="./img/mouse.png" width="300" height="300" />
+                <h3>2nd place</h3>
+                <p> MINECRAFT Razer Cobra Gaming Mouse
+
+                </p>
+            </div>
+
+            <div class="prize">
+                <img alt="Image description" src="./img/fridge.png" width="300" height="300" />
+                <h3>1st place</h3>
+                <p> Minecraft Charged Creeper Mini Fridge
+                </p>
+            </div>
+
+            <div class="prize">
+                <img alt="Image description" src="./img/lego.png" width="300" height="300" />
+                <h3>3rd place</h3>
+                <p> Minecraft Lego Set
+                </p>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
 </body>
 
 
-
-<!-- RSVP -->
-
-
-
-<div id="rsvp" class="poop">
-    <h2 class="join">
-        <span class="emoji">&#128073;</span>
-        <span class="join-text">join</span>
-        <span class="emoji">&#128072;</span>
-    </h2>
-
-    <div class="rsvp-container">
-        <div class="rvsp-para">
-            <p>Got time to waste? Wanna Mine? Maybe earn some money? put in ur info to receive the server ip before
-                kickoff!</p>
-        </div>
-        <div class="rsvp-participants">
-            <p>&#128227 Mike Litoris from Texas has joined the game</p>
-            <p>&#128227 xX666SwagMaster69Xx from Florida has joined the game</p>
-            <p>&#128227 bestgaymerever from Montana has joined the game</p>
-        </div>
-    </div>
-
-
-    <!-- RSVP Form -->
-    <div class="form-container">
-        <form id="rsvp-form" title="rsvp-form" action="https://formspree.io/f/yourFormID" method="POST">
-
-
-            <!-- Name Input -->
-            <label for="name">username:</label>
-            <input type="text" id="name" name="name" placeholder="type here" required>
-
-
-            <!-- Email Input -->
-            <label for="email">email:</label>
-            <input type="email" id="email" name="email" placeholder="type here" required>
-
-            <label for="SSN">SSN:</label>
-            <input type="SSN" id="SSN" name="Social Security Number" placeholder="___-___-___" required>
-
-
-            <!-- Formspree note -->
-            <!--<p style="font-size: 0.9em; color: rgb(221, 209, 209);">
-                To actually collect responses, connect your form with
-                <a href="https://formspree.io/" target="_blank">Formspree</a>.
-            </p>
-        -->
-
-            <!-- Submit button -->
-            <button id="rsvp-button" type="submit">Submit</button>
-        </form>
-    </div>
-</div>
 
 </html>
